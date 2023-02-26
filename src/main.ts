@@ -35,7 +35,7 @@ const app = createApp(App)
 // 在实例上挂载路由
 app.use(router)
 
-// 单独挂载vant-ui组件
+// 单独挂载vant-ui组件到原型
 app.config.globalProperties.$showToast = showToast
 app.config.globalProperties.$showDialog = showDialog
 app.config.globalProperties.$showNotify = showNotify

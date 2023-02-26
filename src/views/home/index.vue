@@ -1,4 +1,8 @@
 <script setup lang="ts">
+// 获取组件的实例
+import { getCurrentInstance } from 'vue';
+const { proxy } = getCurrentInstance() as any;
+proxy.$showToast("122")
 </script>
 
 <template>
