@@ -6,9 +6,33 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
         redirect: '/index'
-    }, {
-        path: '/index',
-        component: defineAsyncComponent(() => import('@/views/home/index.vue'))
+    },
+    {
+        path: "/index",
+        component: defineAsyncComponent(() => import('@/views/layout/index.vue')),
+        children: [
+            {
+                path: "/home",
+                name: "home",
+                component: defineAsyncComponent(() => import('@/views/home/index.vue'))
+
+            },
+            {
+                path: "/video",
+                name: "video",
+                component: defineAsyncComponent(() => import('@/views/video/index.vue'))
+            },
+            {
+                path: "/news",
+                name: "news",
+                component: defineAsyncComponent(() => import('@/views/news/index.vue'))
+            },
+            {
+                path: "/me",
+                name: "me",
+                component: defineAsyncComponent(() => import('@/views/home/index.vue'))
+            }
+        ]
     }
 ]
 

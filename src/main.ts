@@ -29,6 +29,10 @@ import 'vant/es/notify/style';
 import { showImagePreview } from 'vant';
 import 'vant/es/image-preview/style';
 
+// 使用lib-flexible 动态设置REM基准值（html标签的字体大小）
+import 'amfe-flexible'
+
+
 // 创建app实例
 const app = createApp(App)
 
