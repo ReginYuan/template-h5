@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-const useDemoStore = defineStore(
+export const useDemoStore = defineStore(
   "demo",
   () => {
     const counter = ref(0);
@@ -15,9 +15,8 @@ const useDemoStore = defineStore(
   {
     // 开启持久化
     persist: {
-      key: 'demo',
-      storage: sessionStorage
+      key: "demo",
+      storage: sessionStorage,
     },
   }
 );
-export default useDemoStore;
