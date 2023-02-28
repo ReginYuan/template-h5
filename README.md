@@ -1,12 +1,11 @@
-# Vue 3 + TypeScript + Vite
+## Vue 3 + TypeScript + Vite
 
 
-# pnpm安装依赖
+## pnpm安装依赖
  pnpm  install
 
- # pnpm运行项目
+## pnpm运行项目
  pnpm  run  dev
 
-  # pnpm打包项目
-
-  pnpm  run  build
+## pnpm打包项目
+pnpm  run  build
